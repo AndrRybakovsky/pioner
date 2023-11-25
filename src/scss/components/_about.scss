@@ -1,0 +1,35 @@
+.about {
+  padding-top: 80px;
+
+  &__heading {
+    margin-bottom: 32px;
+  }
+
+  &__content {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 32px;
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+    row-gap: 24px;
+  }
+
+  &__description {
+    grid-column: 6 span;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: $dark;
+  }
+
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+  }
+
+  &__image {
+    grid-column: 6 span;
+  }
+}
