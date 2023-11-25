@@ -1,1 +1,1 @@
-import './components/test';
+import './components/slider';
