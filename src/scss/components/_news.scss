@@ -1,0 +1,43 @@
+.news {
+  padding-top: 80px;
+
+  &__heading {
+    margin-bottom: 32px;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    .swiper-slide {
+      height: auto;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 10px 0px 23px -5px rgba(34, 60, 80, 0.2);
+    background-color: $light;
+    transform: translateY(-50%);
+
+    &--prev {
+      left: -30px;
+    }
+
+    &--next {
+      right: 30px;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    fill: $dark;
+  }
+}
