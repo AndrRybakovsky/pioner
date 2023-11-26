@@ -1,0 +1,55 @@
+.footer {
+  padding-top: 56px;
+  padding-bottom: 24px;
+  background: $dark;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+  }
+
+  &__col {
+    grid-column: 6 span;
+
+    &--full {
+      grid-column: 12 span;
+      margin-top: 70px;
+    }
+
+    &--flex {
+      display: flex;
+      gap: 56px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-decoration: none;
+    color: $light;
+  }
+
+  &__copyright {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    color: $light;
+  }
+}
